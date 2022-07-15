@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+  
+:root {
+    --negro: #020403; 
+    --gris: #adadad;
+    --blanco: #ffffff;
+}
+
+body {
+    background: var(--negro);
+    color: var(--blanco);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+ 
+.contenedor {
+    width: 84em;
+    margin: auto;
+}
+
+/* ----- ----- HEADER ----- ----- */
+
+
+header .contenedor {
+    background-image: url(portfolio_7-main/Group\ 99.svg),url(portfolio_7-main/Group\ 98.svg);
+    background-repeat: no-repeat;
+    background-position: 2em 3em,0em 10em;
+    height: 55em; 
+}
+
+header .contenedor .menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    margin-right: 1.5em;
+}
+
+header .contenedor .menu a {
+    text-decoration: none;
+    color: var(--blanco);
+    margin: 1em;
+    font-size: 0.7em;
+}
+
+header .contenedor .contenedor-perfil {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    margin: 3em;
+}
+
+header .contenedor .contenedor-perfil .foto {
+    margin:0.5em;
+}
+
+header .contenedor .contenedor-perfil .foto img{
+    width: 16em;
+}
+
+header .contenedor .contenedor-perfil .texto{
+    text-align: center;
+}
+
+header .contenedor .contenedor-perfil .texto .nombre{
+    text-align: center;
+    margin: 0.5em;
+    color: var(--gris);
+    font-weight: 500;
+}
+
+header .contenedor .contenedor-perfil .texto .profesion{
+    text-align: center;
+    margin: 0.3em;
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 3em;
+}
+
+header .contenedor .contenedor-perfil .redes-sociales {
+    margin-top: -2em;
+}
+
+header .contenedor .contenedor-perfil .redes-sociales a img{
+    width: 3em;
+    margin: 0em 1em;
+}
+/* ----- ----- MAIN ----- ----- */
+
+
+.main .acerca-de .contenedor {
+    text-align: center;
+    width: 50em;
+    margin: auto;
+}
+
+.main .acerca-de .contenedor .titulo {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 1em;
+}
+
+.main .acerca-de .contenedor p {
+    color: var(--gris);
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 4em;
+}
+
+.main .habilidades .contenedor .titulo {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2em;
+    font-weight: 500;
+    margin: 1em 0em 1em 9em;
+}
+
+.main .habilidades .contenedor .contenedor-habilidades {
+    align-items: center;
+    display: grid;
+    grid-template-columns:  50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 42em;
+    margin: auto;
+}
+
+ .main .habilidades .contenedor .contenedor-habilidades .habilidad {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.main .habilidades .contenedor .contenedor-habilidades .habilidad .thumb,.descripcion{
+    margin: 0.5em;
+} 
+
+.main .habilidades .contenedor .contenedor-habilidades .habilidad .nombre{
+    color: var(--blanco);
+    font-size: 0.7em;
+    font-weight: 400;
+} 
+
+.main .experiencias .contenedor .titulo {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    margin: 1em 0em;
+}
+
+.main .experiencias .contenedor .contenedor2 {
+    width: 42em;
+    margin: auto;
+}
+
+.main .experiencias .contenedor .contenedor2 .contenedor-experiencia .experiencia {
+    display: flex; 
+    flex-direction: row;
+    border-bottom: 0.06em solid var(--gris);
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+.main .experiencias .contenedor .contenedor2 .contenedor-experiencia .experiencia .fecha{
+    margin-right: 13em;
+    color: var(--gris);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.main .experiencias .contenedor .contenedor2 .contenedor-experiencia .experiencia .trabajos .empresa{
+    color: var(--gris);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.main .portafolio .contenedor .titulo {
+    font-size: 2em;
+    font-weight: 500;
+    margin: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.main .portafolio .contenedor .contenedor-portafolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main .portafolio .contenedor .contenedor-portafolio .proyecto .vista a img {
+    width: 10em;
+    height: 10em;
+    margin: 0em 5em;
+}
+
+
+/* ----- ----- FOOTER ----- ----- */
+
+
+footer .Contactos .contenedor .titulo{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+footer .Contactos .contenedor .contenedor-contacto{
+    margin: 1.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .Contactos .contenedor .contenedor-contacto .descripcion {
+    color: var(--gris);
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+footer .Contactos .contenedor .contenedor-contacto .imagen{
+    border: 0.06em solid var(--gris);
+    border-radius: 2.8em;
+    padding: 0.9em;
+    margin: 0.9em;
+}
+
+footer .Contactos .contenedor .contenedor-contacto .telefono,.correo {
+    margin: 1em;
+}
+
+footer .Contactos .contenedor .contenedor-contacto .descripcion .medio {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 1em;
+}
+
+footer .final .despedida p {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 400;
+    margin: 2em;
+    color: var(--gris);
+}
+
+
+/* ----- ----- MEDIA QUERIES ----- ----- */
+
+
+@media screen and (max-width: 1475px) {
+    header .contenedor .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    body {
+        font-size: 10px;
+    }
+
+    .main .acerca-de .contenedor p {
+        font-size: 13px;
+    }
+    
+    footer .Contactos .contenedor .medio,.contanco {
+        font-size: 13px;
+    }
+
+    header .contenedor .menu {
+        background-image: url(portfolio_7-main/menu\ 1.svg);
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+    }
+    
+    header .contenedor .menu a{
+        margin: 4px;
+        font-size: 14px;
+    }
+    
+    header .contenedor .menu a:hover{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main .acerca-de .contenedor {
+        width: 40em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contenedor {
+        width: 70em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contenedor {
+        width: 60em;
+    }
+
+    .main .portafolio .contenedor .contenedor-portafolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main .portafolio .contenedor .contenedor-portafolio .proyecto .vista a img {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contenedor {
+        width: 50em;
+    }
+
+}
+
+
+
